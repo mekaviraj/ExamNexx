@@ -1,0 +1,12 @@
+{
+  "name": "examnexx",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev:web": "pnpm --dir apps/web dev",
+    "build:web": "pnpm --dir apps/web build",
+    "lint:web": "pnpm --dir apps/web lint",
+    "dev:api": "uvicorn app.main:app --reload --app-dir apps/api",
+    "dev": "pnpm dev:web"
+  }
+}
